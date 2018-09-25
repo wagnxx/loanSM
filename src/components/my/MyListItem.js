@@ -7,7 +7,7 @@ import {jumpto} from "../../utils/history"
 export default class MyListItem extends React.Component {
     goDetails = () => {
         if (this.props.login) {
-            console.log(this.props.cont.froms);
+            // console.log(this.props.cont.froms);
             jumpto(`/my/${this.props.cont.froms}`)
 
         } else {
