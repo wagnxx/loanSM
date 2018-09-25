@@ -1,0 +1,108 @@
+.loan-barnner{
+  width:100%;
+  overflow: hidden;
+}
+
+.loan-entry{
+  padding: 1% 28rem/@base ;
+  box-shadow: -1px -1px 1px #ddd ;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin:10rem/@base 0;
+  &-lists{
+    display: flex;
+    padding: 25rem/@base 0;
+    flex-wrap: wrap;
+    &-item{
+      width:50%;
+      margin-top: 2.5%;
+      box-sizing: border-box;
+      img{
+        .px2rem(width,85);
+        .px2rem(height,85);
+        border-radius: 100%;
+      }
+      &-r{
+        line-height: 128%;
+        padding-left: 25rem/@base;
+        a{
+          letter-spacing: 1px;
+        }
+        p{
+          color: @gr80;
+          font-size: .8em;
+
+        }
+      }
+
+    }
+  }
+}
+
+.loan-companys{
+  .px2rem(font-size,29) ;
+  .conpanys-listGroup{
+    margin: 25rem/@base 0;
+    .conpanys-top{
+      border-bottom: 1px solid #ddd;
+      height: 60rem/@base;
+      line-height: 60rem/@base;
+      padding-bottom: 10rem/@base;
+
+      .conpanyLogo{
+        width:50rem/@base;
+        display: inline-block;
+        vertical-align: top;
+        >img{
+          width:100%;
+          vertical-align: middle;
+        }
+      }
+      .characteristic{
+        width:94rem/@base;
+        height: 54rem/@base;
+      }
+    }
+    .conpanys-bot{
+      color:@t-red;
+      padding: 10rem/@base 0;
+      line-height: 145%;
+      .conpanys-bot-l{
+        padding-right: 40rem/@base;
+        padding-top: 7rem/@base;
+        .mon{
+          font-size: 1.2em;
+        }
+        p{
+          font-size: .9em;
+          color: @gr80;
+        }
+      }
+      .conpanys-bot-m{
+        font-size: .8em;
+        color: @gr70;
+        border-left: 1px solid #ddd;
+        line-height: 127%;
+        padding-left: 38rem/@base;
+        margin-top: 8rem/@base;
+      }
+      .conpanys-bot-r{
+        a{
+          font-size: .85em;
+          border-radius: 30px;
+          margin-top: 25rem/@base;
+          display: inline-block;
+          vertical-align: middle;
+          border: 1px solid;
+          padding: 4rem/@base 9rem/@base;
+          img{
+            width:.5em;
+            vertical-align: middle;
+            margin-left: 8rem/@base;
+          }
+        }
+      }
+    }
+  }
+
+}

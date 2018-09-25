@@ -1,0 +1,62 @@
+/* 金额类型开始 */
+
+.loan-mon{
+  display: flex;
+  height: 90rem/@base;
+  line-height: 90rem/@base;
+  border-bottom: 1px solid #ddd;
+
+  &-item{
+    flex: 1;
+    img{
+      width:36rem/@base;
+      border-radius: 100%;
+      vertical-align: middle;
+    }
+    img.logo-left{
+      margin-left: 50rem/@base;
+
+    }
+    img.logo-right{
+      width:18rem/@base;
+      margin-left: 25rem/@base;
+      margin-bottom: 5rem/@base;
+    }
+    img[src="images/logo-lx.png"]{
+      border-radius: 0;
+      width:30rem/@base;
+    }
+    .loan-mon-tit{
+      margin-left: 23rem/@base;
+    }
+  }
+}
+
+
+/* 金额类型结束 */
+
+/* 排序方法开始 */
+.loan-sort{
+  padding: 5rem/@base 0;
+  ul{
+    display: flex;
+    li{
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+    .act_red::after{
+      background: @t-red;
+      width:40%;
+      height: 2px;
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10rem/@base;
+      margin: 0 auto;
+    }
+  }
+}
+

@@ -1,0 +1,187 @@
+/*申请开始*/
+.detail-top{
+  .px2rem(height, 350);
+  background: #3c4652;
+  color:#fff;
+  padding: 37rem/@base 30rem/@base 0;
+  position: relative;
+  .detail-logo{
+    .px2rem(height, 77);
+    .px2rem(line-height, 77);
+    padding: 0;
+
+    img{
+      .px2rem(width, 78);
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 100%;
+    }
+    &-name{
+      .px2rem(margin-left,23);
+    }
+  }
+  .characteristic{
+    .px2rem(height,75);
+    .px2rem(line-height,75);
+    font{
+      margin:0 28rem/@base ;
+      font-size: 0.8em;
+    }
+  }
+  .choice-box{
+    .px2rem(width,636);
+    .px2rem(height,354);
+    padding: 13rem/@base 25rem/@base;
+    position: absolute;
+    background: #fff;
+    border-radius: 15rem/@base;
+    box-shadow: 1px 1px 1px #ddd ;
+    top:209rem/@base;
+    color: #333;
+    >span{
+      color: #999;
+    }
+    &-mes{
+      display: flex;
+      color: #333;
+      margin-top: 36rem/@base;
+      &-item{
+        flex: 1;
+        text-align: center;
+        >span{
+          // font-weight: 600;
+          font-size: 1.21em;
+        }
+        &:nth-child(2){
+          position: relative;
+          ::after{
+            width:2px;
+            height: 52rem/@base;
+            display: block;
+            content:"";
+            position: absolute;
+            right:0;top:0;
+            bottom: 0;
+            margin:auto 0;
+            background: #ddd;
+
+          }
+          ::before{
+            width:2px;
+            height: 52rem/@base;
+            display: block;
+            content:"";
+            position: absolute;
+            left:0;top:0;
+            bottom: 0;
+            margin:auto 0;
+            background: #ddd;
+
+          }
+        }
+      }
+    }
+    .check-box{
+      display: flex;
+      margin-top: 60rem/@base;
+
+      .check-item{
+        flex: 1;
+        padding: 8rem/@base;
+        &-inner{
+          border: 1px solid #ddd;
+          height:55rem/@base;
+          border-radius: 12rem/@base;
+          padding:0 18rem/@base;
+          input{
+            display: inline-block;
+            vertical-align: middle;
+            width:127rem/@base;
+            height:53rem/@base;
+            margin-right: 15rem/@base;
+            text-align: right;
+            font-size: 1.13em;
+            border:none;
+            outline: none;
+          }
+          #timg_long{
+            display: inline-block;
+            vertical-align: middle;
+            width:127rem/@base;
+            height:53rem/@base;
+            margin-right: 15rem/@base;
+            text-align: right;
+            padding-right: .5em;
+            position: relative;
+            &::after{
+              content:"";
+              display: block;
+              width:16rem/@base;
+              height: 18rem/@base;
+              background: url(../../images/logo-down.png) no-repeat;
+              background-size: contain;
+              background-position: 0 -2rem/@base;
+              position: absolute;
+              top:0;
+              bottom: 0;
+              margin:auto 0;
+              right: -23rem/@base;
+            }
+          }
+          .yuan{
+            color:#999;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+h3{
+  color:#333;
+
+  font-size: 1.1em;
+}
+.application-process{
+  margin-top: 210rem/@base;
+
+  ul{
+    margin-top: 40rem/@base;
+    li{
+      float: left;
+      text-align: center;
+      line-height: 150%;
+      >img{
+        width:69rem/@base;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.application-instruction{
+
+  p{
+    color: #808080;
+  }
+  hr{
+    margin:25rem/@base 0;
+    height: 1px;
+    background: #e6e6e6;
+    border:none;
+
+  }
+}
+
+
+
+.detailFooter{
+  text-align: center;
+  background: @bg-red;
+  color: #fff;
+  height: 114rem/@base;
+  line-height: 114rem/@base;
+  margin-top: 44rem/@base;
+}

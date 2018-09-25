@@ -1,0 +1,96 @@
+
+.city-lists{
+    
+    padding: 18rem/@base 0;
+    
+    h3{
+ 
+        height: 84rem/@base;
+        line-height: 84rem/@base;
+        background: #fff;
+        padding:0 18rem/@base ;
+    }
+    .city-group{
+        padding:18rem/@base ;
+        border-radius: 12rem/@base;
+        background: #f2f2f2;
+        
+        &::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        span{
+     
+            width:187rem/@base;
+          
+            height: 67rem/@base;
+            text-align: center;
+            display: block;
+            float: left;
+            border:1px solid #ddd;
+            border-radius: 14rem/@base;
+            margin-top: 16rem/@base;
+            line-height: 67rem/@base;
+            box-sizing: border-box;
+            background: #fafafa;
+            &:nth-child(3n+2){
+              
+                margin: 0 35rem/@base;
+                margin-top: 16rem/@base;
+            }
+        }
+    }
+}
+
+.initials-bar{
+    width:40rem/@base;
+    height: 1080rem/@base;
+    position: fixed;
+    top:8%;
+    right: 0;
+   
+    ul{
+        li{
+            width:100%;
+            height: 40rem/@base;
+            line-height:40rem/@base;  
+            text-align: center;
+ 
+            box-sizing: border-box;
+            font-size: 0.8em;
+        }
+    }
+}
+.slidingBlock{
+    position: absolute;
+    background: #f00;
+    width:40rem/@base;
+    height: 40rem/@base;
+    top:0;
+    text-align: center;
+    line-height: 40rem/@base;
+    right: 50rem/@base;
+    font-size: .8em;
+    color:#fff;
+     border-radius: 100%;
+    &::after{
+        width:0;
+        height: 0;
+        color:rgba(255, 0, 0, .9);
+        z-index: 0;
+        content:"";
+        display: block;
+        position: absolute;
+        top:10rem/@base;
+        right: -7rem/@base;
+        border-color: green;
+   
+        border-top: 11rem/@base solid transparent;
+        border-bottom: 11rem/@base solid transparent;
+        border-right: none;
+        border-left: 13rem/@base solid ;
+
+         
+    }
+}

@@ -1,0 +1,95 @@
+/*银行列表开始*/
+.main-box{
+  border:1px solid #ddd;
+}
+.bank-list{
+
+  border-bottom: 0;
+  ul{
+    li{
+      width:50%;
+      height: 156rem/@base;
+      box-sizing: border-box;
+      padding: 27rem/@base 24rem/@base 0;
+      float: left;
+      border-bottom:1px solid #ddd;
+      &:nth-child(odd){
+        border-right: 1px solid #ddd;
+
+      }
+
+      .bank-logo{
+        width:76rem/@base;
+        height: 76rem/@base;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 14rem/@base;
+        img{
+          vertical-align: middle;
+        }
+      }
+      .bank-tit{
+        display: inline-block;
+        line-height:210%;
+        margin-left: 20rem/@base;
+
+        h3{
+
+          span{
+            width:65rem/@base;
+            height: 30rem/@base;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/*银行列表结束*/
+
+
+/*信用卡推荐开始*/
+.card-recommend{
+
+  >h3{
+
+    padding: 38rem/@base 24rem/@base;
+
+  }
+  .recomend-list{
+    padding: 20rem/@base 24rem/@base;
+    border-top: 1px solid #ddd;
+    .card-pic{
+      width:226rem/@base;
+      height: 143rem/@base;
+      display: block;
+      float: left;
+      margin-top: 7rem/@base;
+    }
+    .card-content{
+      float: left;
+      margin-left: 25rem/@base;
+      >span{
+        color: @t-blue;
+        border: 1px solid;
+        padding: 3rem/@base 12rem/@base;
+        border-radius: 20rem/@base;
+        margin-left: 10rem/@base;
+      }
+      p{
+        .buyer-num{
+          color: @t-red;
+        }
+      }
+    }
+  }
+
+
+
+
+
+}
+/*信用卡推荐结束*/

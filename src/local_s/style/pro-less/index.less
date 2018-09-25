@@ -1,0 +1,30 @@
+@base:75;
+@t-red:#fe3a39;
+@t-wh:#fff;
+@t-blue:#347ed3;
+@bg-red:#ff4645;
+@gr70:#707070;
+@gr80:#808080;
+.px2rem(@property, @value){
+    @{property} :unit(round(@value/@base,5),rem);
+
+}
+*{  margin: 0;  padding: 0;   }
+body {line-height:180%;.px2rem(font-size,29) !important;font-family: "Microsoft Yahei";  background-color: #f6f8fa;  }
+ul, ol {  list-style: none;  }
+.container {  min-width: 320px;  max-width: 750px;  margin: 0 auto; background-color: #fff; }
+img {  width: 100%;    }
+.cl:after {content:"\200B"; display:block; height:0; clear:both; }
+.cl { *zoom:1; }
+.fl{float:left;}
+.fr{float:right;}
+//.main{padding: 0 30rem/@base 0;}
+.spaceud{margin-bottom: 130rem/@base}
+@import "footer";
+@import "my";
+@import "home";
+@import "loan";
+@import "speedLoand";
+@import "detail";
+@import "applaycard";
+@import "city";
