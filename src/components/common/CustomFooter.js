@@ -20,6 +20,7 @@ class CustomFooter extends React.Component {
     }
 
     componentWillMount() {
+        //###这里需要在过滤下参数
         this.setStateHandle(this.props.history.location.pathname.match(/(^\/\w+)(\/)?/)[1])
     }
 
